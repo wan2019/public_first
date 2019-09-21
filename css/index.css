@@ -1,5 +1,5 @@
 *{margin: 0;padding: 0;border:none;box-sizing:border-box;}
-html,body{height: 100%;}
+html,body{height: 100%;max-width:1440px;}
 section{min-height: 100%;padding: 30px;box-shadow: 3px 0 7px gray;
         background-color: #f1f1f1;border-radius: 15px;}
 #sec1 {padding: 0;margin: 0;}
@@ -8,7 +8,7 @@ ul,li{list-style:none;margin: 0;padding: 0;}
 
 /*sec1區*/
 #sec1{position: relative;overflow: hidden;height: 50%;
-    min-height: inherit;height: 102%;}
+    min-height: inherit;height: 60vw;width: 100vw;}
 #sec1>div:nth-of-type(1){height: 60px;}
 nav{background-color: rgba(255, 255, 255, 0.92);height: 60px;width: 100%; z-index: 9;
     position: fixed;top:-60px;transition: all 1s;box-shadow: 3px 0 7px gray;
@@ -46,19 +46,16 @@ position: absolute;left: -50%;}
 position: absolute;right: -50%;}
 .sec1ashow{transform: translate(100%,0);}
 .sec1bshow{transform: translate(-100%,0);}
-#sec1 div>h1{color: aliceblue;font-size: 160px;}
-#sec1a h1 {position: absolute;top:23%;right: 60px;transition: all 1s;font-family: 'Baumans', cursive;}
-#sec1b h1 {position: absolute;top:40%;left: 60px;transition: all 1s;font-family: 'Baumans', cursive;}
+#sec1 div>h1{color: aliceblue;font-size: 10vw;}
+#sec1a h1 {position: absolute;top:30%;right: 3vw;transition: all 1s;font-family: 'Baumans', cursive;}
+#sec1b h1 {position: absolute;top:30%;left: 3vw;transition: all 1s;font-family: 'Baumans', cursive;}
 .sec1aH1show{transform: rotate(0deg); }
 .sec1bH1show{transform: rotate(0deg);}
 /*背景區*/
 #back1 {
 	position: relative;
 }
-#backcolor{height: 200px;width: 100%; background-color: #006284; top:0;z-index: -1;}
-.blackchange1{position: absolute;}
-.blackchange2{position: fixed;}
-#back {padding: 30px;background-color: transparent;}
+
 
     }
 /*背景區 end*/
@@ -67,7 +64,7 @@ position: absolute;right: -50%;}
 #sec2{position: relative;overflow: hidden;
 }
 #sec2b{text-align: justify;}
-#sec2>h2{font-family: 'Baumans', cursive;font-size: 60px;
+#sec2>h2{font-family: 'Baumans', cursive;font-size: 6vw;
 margin: 4% 0 0 10%;}
 
 
@@ -86,6 +83,7 @@ border-radius: 15px;margin: 2% 5%;}
 @media (min-width:767px){
 
 /*sec1區*/
+
 nav h1{float: left;}
 #menu {display: none;}
 #list {
@@ -99,16 +97,19 @@ nav>div>ul{width: auto;display: inline-block;overflow: hidden;margin: auto;backg
     
 /*sec2區*/
 #sec2 {
-	position: relative;
+	position: relative;overflow: hidden;height: 70%;
 }
-#sec2a{background-color: #006284;width: 45%;height: 60%;transition: all 1s;
-    position: absolute;left: -50%;top:35%;margin: 0;
+#sec2a{background-color: #006284;width: 30vh;height: 40vh;transition: all 1s;
+    position: absolute;left: -40%;top:45%;margin: 0;
     padding: 20px 13% 20px 20px ;box-sizing: border-box;}
-#sec2b{border: 4px #006284 solid;width: 60%;height: 60%;transition: all 1s;
-    position: absolute;right: -65%;top:5%;margin: 0;
+.sec2ashow{transform: translate(180%,0) ;}   
+    
+    
+#sec2b{border: 4px #006284 solid;width: 50%;height: 50%;transition: all 1s;
+    position: absolute;right: -65%;top:=0%;margin: 0;
     box-sizing: border-box;padding: 20px 40px 20px 13%;}
-.sec2ashow{transform: translate(120%,0) ;}
-.sec2bshow{transform: translate(-110%,0);}
+
+.sec2bshow{transform: translate(-150%,0);}
 
 #sec2b>h2{padding-bottom:16px;}
 #sec2b>div{height: 1.7em;}
