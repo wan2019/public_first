@@ -13,13 +13,14 @@ $(document).ready(function(){
         var scroH = $(window).scrollTop(); 
         var windowH =$(window).height();
 
-        if((scroH + windowH )>=targetTop2){
-
+        if((scroH + windowH )>=targetTop2+100){
+//當視窗捲動時，物件滑入sec2
             $('#sec2a').addClass('sec2ashow');
             $('#sec2b').addClass('sec2bshow');
+            $('#sec2>h2').slideDown(1000);
         };
         
-
+//當視窗捲動時，物件滑入sec5
         if((scroH + windowH )>=targetTop5){
             $('#sec5>h1').addClass('sec5h1show');
             $('#sec5>div').addClass('sec5divshow');
