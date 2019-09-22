@@ -96,8 +96,8 @@ nav>div>ul{width: auto;display: inline-block;overflow: hidden;margin: auto;backg
    
     
 /*sec2區*/
-#sec2 {
-	position: relative;overflow: hidden;height: 70%;
+#sec2 { height: 95vh;
+	position: relative;overflow: hidden;
 }
     #sec2>h2{display: none;}
 #sec2a{background-color: #006284;width: 27vw;height: 27vw;transition: all 1s;
@@ -119,9 +119,11 @@ nav>div>ul{width: auto;display: inline-block;overflow: hidden;margin: auto;backg
 	overflow: hidden;
 }
 /*sec4區*/
-    #sec4{height: 90vh;overflow: hidden;padding: 10% 10%;}
-#sec4>div{height: 100%;background-color: gold;
+#sec4{height:100%;overflow: hidden;padding: 10% 10%;}
+#sec4>div{overflow: hidden;background-color: gold;
     }
+#sec4>div>div{height: auto;width: 33%;float: left;font-size:0;}
+#sec4>div>div>img{width: 100%;height:auto;}
 /*sec5區*/
     #sec5 {box-sizing: border-box;padding: 30px 30px 30px 30px;
 position: relative;overflow: hidden;}
