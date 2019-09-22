@@ -120,10 +120,12 @@ nav>div>ul{width: auto;display: inline-block;overflow: hidden;margin: auto;backg
 }
 /*sec4區*/
 #sec4{height:100%;overflow: hidden;padding: 10% 10%;}
-#sec4>div{overflow: hidden;background-color: gold;
+#sec4>div{
     }
 #sec4>div>div{height: auto;width: 33%;float: left;font-size:0;}
 #sec4>div>div>img{width: 100%;height:auto;}
+#sec4>div>div>img:hover{transform: translate(-6%,-6%);
+    box-shadow: 15px 15px 0px gold;}
 /*sec5區*/
     #sec5 {box-sizing: border-box;padding: 30px 30px 30px 30px;
 position: relative;overflow: hidden;}
