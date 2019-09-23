@@ -5,6 +5,7 @@ $(document).ready(function(){
     $('#sec1b').addClass('sec1bshow');
     $('#sec1a h1').addClass('sec1aH1show');
     $('#sec1b h1').addClass('sec1bH1show');
+    
 
     //當視窗捲動時，物件滑入
     function scrollWindos(){
@@ -68,13 +69,10 @@ $(document).ready(function(){
             }event.preventDefault();
         });
     //按上方按鈕nav時，視窗下滑 
-     $('nav a').on('click', function(){
+     $('nav a,.round').on('click', function(){
          if($(window).width()<=767){
                 menuState =false;
         
-//         console.log(menuState);
-//         var idname =$(this).attr('href');        
-//         var targetTop =$(idname).position().top;     $('html,body').animate({scrollTop:targetTop},1000);
            closemune();
          $("#sec1 ul").hide(); 
          }else{
@@ -83,6 +81,7 @@ $(document).ready(function(){
         var targetTop =$(idname).position().top;     $('html,body').animate({scrollTop:targetTop},700);
          }    
             });
+    
             
     //按鈕結束
     //控制視窗大小
