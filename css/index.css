@@ -1,7 +1,7 @@
 *{margin: 0;padding: 0;border:none;box-sizing:border-box;}
 html,body{height: 100%;width:100%;}
 section{padding: 30px;box-shadow: 3px 0 7px gray;
-        background-color: #f1f1f1;border-radius: 15px;}
+        background-color: #f1f1f1;}
 #sec1 {padding: 0;margin: 0;}
 ul,li{list-style:none;margin: 0;padding: 0;}
 
@@ -114,20 +114,21 @@ nav>div>ul{width: auto;display: inline-block;overflow: hidden;margin: auto;backg
     height: 2vw;width: 2vw;margin: 0.5vw auto 0;left: 5vw;
     border-radius: 50%;border: 2px solid aliceblue;cursor: pointer; }
 /*sec2區*/
-#sec2 { height: 100vh;position: relative;overflow: hidden;padding: 0;}
-#sec2>div{margin: auto;background-color: gold;height: 100%;width: 1100px;}
+#sec2 { height: 100vh;position: relative;overflow: hidden;padding: 0;
+    background-color: rgba(255, 215, 0, 0.69);}
+#sec2>div{margin: auto;height: 100%;width: 1100px;}
 
 
 #sec2a{background-color: #006284;width: 400px;height: 400px;transition: all 1s;
-    float: left;box-shadow: 1px 1px 2px gray;
-    margin: 300px 0 0 0;padding: 20px 60px;transform: translate(-700px,0) ;
+    float: left;box-shadow: 1px 1px 5px gray;
+    margin: 350px 0 0 0;padding: 20px 60px;transform: translate(-700px,0) ;
     } 
 #sec2a img{height: 100%;width:auto;}
 .sec2ashow{transform: translate(50px,0)!important;} 
     
 #sec2b{border: 4px #006284 solid;width:700px;height: 400px;transition: all 1s;
-    float: right;box-shadow: 1px 1px 2px gray;
-    margin:100px 0 0 0;padding: 20px 40px 20px 13%;clear:both;transform: translate(700px,0) ;} 
+    float: right;box-shadow: 1px 1px 3px gray;
+    margin:150px 0 0 0;padding: 20px 40px 20px 13%;clear:both;transform: translate(700px,0) ;} 
 .sec2bshow{transform: translate(-50px,0)!important;;}
 /*裝飾線*/
 #sec2b ul>div{border-bottom: 3px solid gray;margin: 10px 0;}     
@@ -149,19 +150,24 @@ nav>div>ul{width: auto;display: inline-block;overflow: hidden;margin: auto;backg
 
 /*sec3區*/
 #sec3{position: relative;padding: 120px 0 0;}
-#sec3>h3{font-size: 1.7vw;font-family: 'Baumans', cursive;
+#sec3>h3{font-size: 40px;padding: 0 0 30px 0;
+    font-family: 'Baumans', cursive;
     display: block;margin: auto;text-align: center;}
-.sec3a{position: absolute;
-        width: 2px;border-bottom: 60vh solid gray;right: 50%;}
+.sec3a{position: absolute;height: 60vh;
+        width: 2px;border-right: 1px solid gray;right: 50%;}
+.sec3a>div{height: 20px;width: 20px;background: #006284;
+    margin:  22px 0 30px 0;border-radius: 50%;
+    transform: translate(-9px,0);
+    }
 .sec3b{height: 90vh;width: 767px;margin: auto;}
-    .sec3b>li{border: 1px solid #006284;height: 10%;margin: 5px 0 ;}
-    .sec3b>li:nth-of-type(1){width: 45%;float: left;}
-    .sec3b>li:nth-of-type(1)::after{content:"我是 before";
-    color:red;}
-    .sec3b>li:nth-of-type(2){width: 45%;float: right;clear:both;}
-    .sec3b>li:nth-of-type(3){width: 45%;clear:right;float: left;}
+    .sec3b>li{height: 10%;margin: 5px 0 ;
+    font-size: 20px;padding-bottom: 83px;}
+    .sec3b>li>p{font-size: 16px;padding-top: 5px;}
+    .sec3b>li:nth-of-type(1){width: 45%;float: left;text-align: end;}
+    .sec3b>li:nth-of-type(2){width: 45%;clear:both;float: right;}
+    .sec3b>li:nth-of-type(3){width: 45%;clear:both;float: left;text-align: end;}
     .sec3b>li:nth-of-type(4){width: 45%;clear:both;float: right;}
-    .sec3b>li:nth-of-type(5){width: 45%;clear:both;float: left;}
+    .sec3b>li:nth-of-type(5){width: 45%;clear:both;float: left;text-align: end;}
     .sec3b>li:nth-of-type(6){width: 45%;clear:both;float: right;}
 /*sec4區*/
 #sec4{height:100%;overflow: hidden;padding: 10% 10%;}
