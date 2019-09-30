@@ -87,9 +87,16 @@ $(document).ready(function(){
         var targetTop =$(idname).position().top;     $('html,body').animate({scrollTop:targetTop},700);
          }    
             });
+//按鈕結束
     
+//按Learn more的視窗變動
+    $('.round').on('click', function(){
+         
+             console.log(menuState);
+        var idname =$(this).attr('href');        
+        var targetTop =$(idname).position().top;     $('html,body').animate({scrollTop:targetTop},700);
+         } );   
             
-    //按鈕結束
     //控制視窗大小
     $(window).resize(function(event){
         console.log(window.innerWidth)
