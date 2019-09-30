@@ -51,6 +51,8 @@ $(document).ready(function(){
         $('#menu3').removeClass('tt');
         $('.menu1').removeClass('ttt');
         $('.menu4').removeClass('ttt');
+        $("#list").removeClass('onepage');
+
     };
     //menu 按鈕
     
@@ -66,6 +68,7 @@ $(document).ready(function(){
                 $('.menu4').addClass('ttt');
 
                 $("#sec1 ul").slideDown();
+                $("#list").addClass('onepage');
 
             } else {
                 console.log(menuState);

@@ -14,6 +14,7 @@ nav{background-color: rgba(255, 255, 255, 0.92);height: 60px;width: 100%; z-inde
     position: fixed;top:-60px;transition: all 1s;box-shadow: 3px 0 7px gray;
     }
 nav h1{height: 60px;line-height: 60px;}
+
 /*meun 按鈕*/
 #menu{height: 60px;width: 70px;
             position: absolute;top:0px;right: 20px;}
@@ -29,10 +30,11 @@ nav h1{height: 60px;line-height: 60px;}
 .tt{transform:rotate(-230deg);transition: all 1s;}
 .ttt{transform: translate(80px,0px); ;}  
 /*meun 按鈕 end*/
-#list {height: 100vh;}
+.onepage {height: 100vh;}
 nav>div>ul{background-color:#fff;width: 100%;display: none;height: 100%;background-color: rgba(0, 0, 0, 0.5);}
 #sec1 a{height: 60px;line-height: 60px;text-decoration: none;color: #fff;
         padding: 0 20px;display: block;}
+#sec1 h1>a{color: #000;}
 
 #sec1 a:nth-last-of-type(1){padding-left: 30px;}
 #sec1 li{text-align: center;border-top:1px solid gray;}
@@ -91,7 +93,7 @@ margin: 8vw 0 0 10%;}
 .sec3a{position: absolute;height: 570px;
         width: 2px;border-right: 1px solid gray;left: 10%;}
 .sec3a>div{height: 20px;width: 20px;background: #006284;
-    margin:  22px 0 55px 0;border-radius: 50%;
+    margin:  22px 0 70px 0;border-radius: 50%;
     transform: translate(-9px,0);
     }
 .sec3b{height: 90vh;width:auto;margin: auto;padding-left: 20%;}
@@ -104,7 +106,7 @@ margin: 8vw 0 0 10%;}
 /*sec4區*/
 #sec4 { height: auto;overflow: hidden;}
 #sec4>div{}
-#sec4>div>div>img{width: 100%;height: auto;}
+#sec4>div>div>a>img{width: 100%;height: auto;}
 /*sec5區*/
 #sec5 {
 	background-color: gray;
@@ -179,13 +181,13 @@ nav>div>ul{width: auto;display: inline-block;overflow: hidden;margin: auto;backg
 
 
 /*sec4區*/
-#sec4{height:100%;overflow: hidden;padding: 10% 10%;}
+#sec4{overflow: hidden;padding: 10% 10%;}
 #sec4>div{
     }
 #sec4>div>div{height: auto;width: 33%;float: left;font-size:0;
     }
-#sec4>div>div>img{width: 100%;height:auto;border: border: 1px solid gray;}
-#sec4>div>div>img:hover{transform: translate(-6%,-6%);
+#sec4>div>div>a>img{width: 100%;height:auto;border: border: 1px solid gray;}
+#sec4>div>div>a>img:hover{transform: translate(-6%,-6%);
     box-shadow: 15px 15px 0px gold;}
 /*sec5區*/
     #sec5 {box-sizing: border-box;padding: 30px 30px 30px 30px;
