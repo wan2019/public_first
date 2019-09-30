@@ -29,8 +29,9 @@ nav h1{height: 60px;line-height: 60px;}
 .tt{transform:rotate(-230deg);transition: all 1s;}
 .ttt{transform: translate(80px,0px); ;}  
 /*meun 按鈕 end*/
-nav>div>ul{background-color:#fff;width: 100%;display: none;}
-#sec1 a{height: 60px;line-height: 60px;text-decoration: none;color: black;
+#list {height: 100vh;}
+nav>div>ul{background-color:#fff;width: 100%;display: none;height: 100%;background-color: rgba(0, 0, 0, 0.5);}
+#sec1 a{height: 60px;line-height: 60px;text-decoration: none;color: #fff;
         padding: 0 20px;display: block;}
 
 #sec1 a:nth-last-of-type(1){padding-left: 30px;}
@@ -77,31 +78,33 @@ position: absolute;right: -50%;}
 #sec2>h2{font-family: 'Baumans', cursive;font-size: 4vw;
 margin: 8vw 0 0 10%;}
 */
-
+.change {
+	display: block;
+}
 
 /*sec3區*/
 /*sec3區*/
-#sec3{position: relative;padding: 120px 0 0;}
+#sec3{position: relative;padding: 30px 0 0;}
 #sec3>h3{font-size: 40px;padding: 0 0 30px 0;
     font-family: 'Baumans', cursive;
     display: block;margin: auto;text-align: center;}
 .sec3a{position: absolute;height: 570px;
         width: 2px;border-right: 1px solid gray;left: 10%;}
 .sec3a>div{height: 20px;width: 20px;background: #006284;
-    margin:  22px 0 30px 0;border-radius: 50%;
+    margin:  22px 0 55px 0;border-radius: 50%;
     transform: translate(-9px,0);
     }
 .sec3b{height: 90vh;width:auto;margin: auto;padding-left: 20%;}
-    .sec3b>li{height: 10%;margin: 5px 0 ;
-    font-size: 20px;padding-bottom: 83px;display: none;}
-    .sec3b>li>p{font-size: 16px;padding-top: 5px;}
+    .sec3b>li{margin: 5px 0 ;
+    font-size: 20px;padding-bottom: 20px;display: none;}
+    .sec3b>li>p{font-size: 16px;padding: 5px 15px 0 0;}
     .sec3b>li:nth-of-type(odd){width: 100%;float: left;text-align:left;clear:both;}
     .sec3b>li:nth-of-type(even){width: 100%;float: left;text-align:left;clear:both;}
 
 /*sec4區*/
 #sec4 { height: auto;overflow: hidden;}
 #sec4>div{}
-#sec4>div>div>img{width: 100vw;height: auto;}
+#sec4>div>div>img{width: 100%;height: auto;}
 /*sec5區*/
 #sec5 {
 	background-color: gray;
@@ -128,6 +131,7 @@ nav>div>ul{width: auto;display: inline-block;overflow: hidden;margin: auto;backg
 #sec1 li{float: left;padding: 0 5px;border: 0;}
 #sec1 li:nth-last-of-type(1) {border: 0;}
 #sec1 div>h1{font-size: 10vw;}
+#sec1 a{color: #000;}
    
 #sec1b h4 {position: absolute;top:55%;right: 43.3vw;
     white-space:nowrap;color: aliceblue;} 
@@ -138,14 +142,14 @@ nav>div>ul{width: auto;display: inline-block;overflow: hidden;margin: auto;backg
     border-radius: 50%;border: 2px solid aliceblue;cursor: pointer; }
     
 /*sec2區*/
-#sec2 { height: 100vh;position: relative;overflow: hidden;padding: 0;
+#sec2 { min-height: 100vh;position: relative;overflow: hidden;padding: 0;
     background-color: rgba(255, 215, 0, 0.69);}
-#sec2>div{margin: auto;height: 100%;width: 1100px;}
-
+#sec2>div{margin: auto;height: 100%;max-width: 1100px}
+.imgOut{margin: 50px 0 20px 0;display: none;}
 
 #sec2a{background-color: #006284;width: 400px;height: 400px;transition: all 1s;
     float: left;box-shadow: 1px 1px 5px gray;
-    margin: 320px 0 0 0;padding: 20px 60px;transform: translate(-700px,0) ;
+    margin: -58px 0 50px 0;padding: 30px 30px;transform: translate(-700px,0) ;
     } 
 #sec2a img{height: 100%;width:auto;display: block;}
 .sec2ashow{transform: translate(50px,0)!important;} 
@@ -156,27 +160,22 @@ nav>div>ul{width: auto;display: inline-block;overflow: hidden;margin: auto;backg
 .sec2bshow{transform: translate(-50px,0)!important;;}
 /*裝飾線*/
 #sec2b ul>div{border-bottom: 3px solid gray;margin: 10px 0;}     
+    .l1{float: left;width: 50%;}   
     
-    
-    /*
-.sec2ashow{transform: translate(43vw,0) ;}   
-    
-    
-#sec2b{border: 4px #006284 solid;width: 720px;height: 400px;transition: all 1s;
-    position: absolute;right: -730px;top:20%;margin: 0;
-    box-sizing: border-box;padding: 20px 40px 20px 13%;}
-
-
-
-#sec2b>h2{padding-bottom:16px;}
-#sec2b>div{height: 1.7em;}
-*/
-
+.change {
+	display: none;
+}
 /*sec3區*/
+#sec3{padding-top: 120px;}
+
     .sec3a{left: 50%;}
     .sec3b{width: 767px;padding: 0;}
     .sec3b>li:nth-of-type(odd){width: 45%;float: left;text-align: end;clear:both;}
     .sec3b>li:nth-of-type(even){width: 45%;clear:both;float: right;}
+.sec3a>div{height: 20px;width: 20px;background: #006284;
+    margin:  22px 0 70px 0;border-radius: 50%;
+    transform: translate(-9px,0);
+    }
 
 
 /*sec4區*/
@@ -202,3 +201,10 @@ position: relative;overflow: hidden;}
     #sec6{overflow:hidden; }   
 #sec6>div{margin: auto;margin: 60px 0 60px 0;height:757;}
 #sec6>div>iframe{margin: auto;width:640; height:757;}
+}
+@media (min-width:1097px){
+ #sec2a{
+    margin: 320px 0 0 0;
+    }    
+}
+    
