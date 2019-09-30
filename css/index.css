@@ -75,6 +75,23 @@ margin: 8vw 0 0 10%;}
 
 
 /*sec3區*/
+/*sec3區*/
+#sec3{position: relative;padding: 120px 0 0;}
+#sec3>h3{font-size: 40px;padding: 0 0 30px 0;
+    font-family: 'Baumans', cursive;
+    display: block;margin: auto;text-align: center;}
+.sec3a{position: absolute;height: 570px;
+        width: 2px;border-right: 1px solid gray;left: 10%;}
+.sec3a>div{height: 20px;width: 20px;background: #006284;
+    margin:  22px 0 30px 0;border-radius: 50%;
+    transform: translate(-9px,0);
+    }
+.sec3b{height: 90vh;width:auto;margin: auto;padding-left: 20%;}
+    .sec3b>li{height: 10%;margin: 5px 0 ;
+    font-size: 20px;padding-bottom: 83px;display: none;}
+    .sec3b>li>p{font-size: 16px;padding-top: 5px;}
+    .sec3b>li:nth-of-type(odd){width: 100%;float: left;text-align:left;clear:both;}
+    .sec3b>li:nth-of-type(even){width: 100%;float: left;text-align:left;clear:both;}
 
 /*sec4區*/
 #sec4 { height: auto;overflow: hidden;}
@@ -121,14 +138,14 @@ nav>div>ul{width: auto;display: inline-block;overflow: hidden;margin: auto;backg
 
 #sec2a{background-color: #006284;width: 400px;height: 400px;transition: all 1s;
     float: left;box-shadow: 1px 1px 5px gray;
-    margin: 350px 0 0 0;padding: 20px 60px;transform: translate(-700px,0) ;
+    margin: 320px 0 0 0;padding: 20px 60px;transform: translate(-700px,0) ;
     } 
 #sec2a img{height: 100%;width:auto;}
 .sec2ashow{transform: translate(50px,0)!important;} 
     
 #sec2b{border: 4px #006284 solid;width:700px;height: 400px;transition: all 1s;
     float: right;box-shadow: 1px 1px 3px gray;
-    margin:150px 0 0 0;padding: 20px 40px 20px 13%;clear:both;transform: translate(700px,0) ;} 
+    margin:120px 0 0 0;padding: 20px 40px 20px 13%;clear:both;transform: translate(700px,0) ;} 
 .sec2bshow{transform: translate(-50px,0)!important;;}
 /*裝飾線*/
 #sec2b ul>div{border-bottom: 3px solid gray;margin: 10px 0;}     
@@ -149,26 +166,12 @@ nav>div>ul{width: auto;display: inline-block;overflow: hidden;margin: auto;backg
 */
 
 /*sec3區*/
-#sec3{position: relative;padding: 120px 0 0;}
-#sec3>h3{font-size: 40px;padding: 0 0 30px 0;
-    font-family: 'Baumans', cursive;
-    display: block;margin: auto;text-align: center;}
-.sec3a{position: absolute;height: 60vh;
-        width: 2px;border-right: 1px solid gray;right: 50%;}
-.sec3a>div{height: 20px;width: 20px;background: #006284;
-    margin:  22px 0 30px 0;border-radius: 50%;
-    transform: translate(-9px,0);
-    }
-.sec3b{height: 90vh;width: 767px;margin: auto;}
-    .sec3b>li{height: 10%;margin: 5px 0 ;
-    font-size: 20px;padding-bottom: 83px;}
-    .sec3b>li>p{font-size: 16px;padding-top: 5px;}
-    .sec3b>li:nth-of-type(1){width: 45%;float: left;text-align: end;}
-    .sec3b>li:nth-of-type(2){width: 45%;clear:both;float: right;}
-    .sec3b>li:nth-of-type(3){width: 45%;clear:both;float: left;text-align: end;}
-    .sec3b>li:nth-of-type(4){width: 45%;clear:both;float: right;}
-    .sec3b>li:nth-of-type(5){width: 45%;clear:both;float: left;text-align: end;}
-    .sec3b>li:nth-of-type(6){width: 45%;clear:both;float: right;}
+    .sec3a{left: 50%;}
+    .sec3b{width: 767px;padding: 0;}
+    .sec3b>li:nth-of-type(odd){width: 45%;float: left;text-align: end;clear:both;}
+    .sec3b>li:nth-of-type(even){width: 45%;clear:both;float: right;}
+
+
 /*sec4區*/
 #sec4{height:100%;overflow: hidden;padding: 10% 10%;}
 #sec4>div{

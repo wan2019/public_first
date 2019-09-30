@@ -10,6 +10,7 @@ $(document).ready(function(){
     //當視窗捲動時，物件滑入
     function scrollWindos(){
         var targetTop2 =$("#sec2").offset().top;
+        var targetTop3 =$("#sec3").offset().top;
         var targetTop5 =$("#sec5").offset().top;
         var scroH = $(window).scrollTop(); 
         var windowH =$(window).height();
@@ -19,6 +20,11 @@ $(document).ready(function(){
             $('#sec2a').addClass('sec2ashow');
             $('#sec2b').addClass('sec2bshow');
             $('#sec2>h2').slideDown(1000);
+        };
+        if((scroH + windowH )>=targetTop3+100){
+//當視窗捲動時，物件滑入sec2
+            $('.sec3b>li').slideDown(1000);
+            
         };
         
 //當視窗捲動時，物件滑入sec5
