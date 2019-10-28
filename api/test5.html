@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--  外部字型-->
+<link href="https://fonts.googleapis.com/css?family=Baumans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap" rel="stylesheet">
+<!--內部-->
+ <link rel="stylesheet" href="weather.css">
+ <script
+ src="https://code.jquery.com/jquery-3.4.1.js"
+ integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+ crossorigin="anonymous"></script>  <title>下拉式選單</title> 
+   
+</head>
+<body>
+    <form>
+        <h2>number1</h2>
+        <select id="list1"></select>
+        <select id="list2"></select>
+    </form>
+<script>
+    var list1 = new Array();
+    list1=['a','b','c'];
+    var listContent ='';
+    for(var i=0;i<list1.length;i++){
+     listContent =listContent+ '<option>'+list1[i]+'</option>';
+    }
+    $('#list1').html(listContent);
+
+    var list2 = new Array();
+    list2[0]=['1','11','111'];
+    list2[1]=['2','22','222'];
+    list2[2]=['3','33','333'];
+
+    $('#list1').change(function(){
+        index = this.selectedIndex;
+        var list2Content ='';
+        for(var i=0;i<list2[index].length;i++){
+     list2Content =list2Content+ '<option>'+list2[index][i]+'</option>';
+    }
+    $('#list2').html(list2Content);
+   
+    });
+    $('#list1').change();//寫兩次才會在載入的時候變化。
+
+
+</script>
+
+    
+</body>
+</html>

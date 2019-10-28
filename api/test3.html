@@ -16,17 +16,17 @@
 </head>
 <body>
  
-        <form>
-                <p>請選擇縣市</p>
-                <select id="college-list"></select>
-                <br>
-                <br>
-                <p>當你選擇學院後，下列選單會列出屬於該學院的所有科系</p>
-                <select id="sector-list"></select>
-                <br>
-                <p>第三層</p>
-                <select id="sector3"></select>
-            </form>
+<form>
+        <p>請選擇縣市</p>
+        <select id="college-list" ></select>
+        <br>
+        <br>
+        <p>第二層</p>
+        <select id="sector-list"></select>
+        <br>
+        <p>第三層</p>
+        <select id="sector3"></select>
+</form>
     <script>
                 // 產出第一層
                 var colleges=['台中','台北','高雄'];
@@ -41,7 +41,7 @@
                 var sectors=new Array();
                 sectors[0]=['太平 ',' 大甲' ,' 清水' ];
                 sectors[1]=['士林','中山',' 松山 '];	
-                sectors[2]=['左營 ',' 鳳山 ',' 林園 '];	
+                
                  $("#college-list").change(function(){
                     index=this.selectedIndex;//第一層的index
                     noIndex =index;
@@ -50,62 +50,65 @@
                     console.log('第二層選擇的陣列',sectors[index]);//第二層選擇的陣列
                     var Sinner="";
                     for(var i=0;i<sectors[index].length;i++){
-                        Sinner=Sinner+'<option value=i>'+sectors[index][i]+'</option>';
+                        Sinner=Sinner+'<option value=i>'+sectors[index][i].chil+'</option>';
 
                     }
                     $("#sector-list").html(Sinner);
-                });
-                 $("#college-list").change();
-                 $("#sector-list").change();
-                 
-
-                
-
-                // 第三層
-                var sectorss=new Array();
-                sectorss[0]=['太平 ',' 大甲' ,' 清水' ];
-                sectorss[1]=['士林','中山',' 松山 '];	
-                sectorss[2]=['左營 ',' 鳳山 ',' 林園 '];	
-
-                sectorss[0][0]=['01 ',' 02' ,' 03' ];
-                sectorss[0][1]=['02 ',' 05' ,' 07' ];
-                sectorss[0][2]=['03 ',' 05' ,' 07' ];
-                sectorss[1][0]=['04 ',' 02' ,' 03' ];
-                sectorss[1][1]=['05 ',' 05' ,' 07' ];
-                sectorss[1][2]=['06 ',' 05' ,' 07' ];
-                sectorss[2][0]=['07 ',' 02' ,' 03' ];
-                sectorss[2][1]=['08 ',' 05' ,' 07' ];
-                sectorss[2][2]=['09 ',' 05' ,' 07' ];
-
-
+                     
 
                 $("#sector-list").change(function(){
                     index=this.selectedIndex;
                     console.log('no2',this.selectedIndex);
                     var Sinner3="";
-                    console.log('0000',sectorss[noIndex]);
-                    for(var i=0;i<sectorss[noIndex][index].length;i++){
-                        Sinner3=Sinner3+'<option value=i>'+sectorss[noIndex][index][i]+'</option>';
+                    console.log('0000',sectors[noIndex]);
+                    for(var i=0;i<sectors[noIndex][index].length;i++){
+                        Sinner3=Sinner3+'<option value=i>'+sectors[noIndex][index][i]+'</option>';
                     }
                     $("#sector3").html(Sinner3);
                 });
+               
                 $("#sector-list").change();
+
+
+                });
+                 $("#college-list").change();
+                 $("#sector-list").change();
+                 
+                
+                 
 
                 
 
-                // var sector3s=new Array();
-                // sector3s[0]=['01',' 02' ,' 03' ];
-                // sector3s[1]=['01',' 02' ,' 03' ];	
-                // sector3s[2]=['01',' 02' ,' 03' ];	
-                // $("#sector-list").change(function(){
-                //     index=this.selectedIndex;
-                //     console.log('no2',this.selectedIndex);
-                //     var Sinner3="";
-                //     for(var i=0;i<sector3s[index].length;i++){
-                //         Sinner3=Sinner3+'<option value=i>'+sector3s[index][i]+'</option>';
-                //     }
-                //     $("#sector3").html(Sinner3);
-                // });
+                // 第三層
+                // var sectorss=new Array();
+                // sectorss[0]=['太平 ',' 大甲' ,' 清水' ];
+                // sectorss[1]=['士林','中山',' 松山 '];	
+                // sectorss[2]=['左營 ',' 鳳山 ',' 林園 '];	
+
+                // sectorss[0][0]=['01 ',' 02' ,' 03' ];
+                // sectorss[0][1]=['02 ',' 05' ,' 07' ];
+                // sectorss[0][2]=['03 ',' 05' ,' 07' ];
+                // sectorss[1][0]=['04 ',' 02' ,' 03' ];
+                // sectorss[1][1]=['05 ',' 05' ,' 07' ];
+                // sectorss[1][2]=['06 ',' 05' ,' 07' ];
+                // sectorss[2][0]=['07 ',' 02' ,' 03' ];
+                // sectorss[2][1]=['08 ',' 05' ,' 07' ];
+                // sectorss[2][2]=['09 ',' 05' ,' 07' ];
+
+
+
+               
+               //第三層
+                
+                 
+                
+
+
+
+
+                
+
+                
            
     
     </script>

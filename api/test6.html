@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+<!--  外部字型-->
+<link href="https://fonts.googleapis.com/css?family=Baumans&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap" rel="stylesheet">
+ <!--內部-->
+<!--  <link rel="stylesheet" href="weather.css">-->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>  <title>下拉式選單</title>
+</head>
+<body>
+
+        <form>
+                <p>請選擇縣市</p>
+                <select id="college-list"></select>
+                <br>
+                <br>
+                <p>當你選擇學院後，下列選單會列出屬於該學院的所有科系</p>
+                <select id="sector-list"></select>
+                <br>
+                <p>第三層</p>
+                <select id="sector3"></select>
+        </form>
+    <script>
+                // 產出三層
+                var colleges=['台中','台北','高雄'];
+                var sectors =[['太平 ',' 大甲' ,' 清水' ],
+                              ['士林','中山',' 松山 '],
+                              ['左營 ',' 鳳山 ',' 林園 ']];
+                var sectorss=[[['01 ',' 02' ,' 03' ],['04 ',' 05' ,' 06' ],['07 ',' 08' ,' 09' ]],
+                    [['11 ',' 12' ,' 13' ],['14 ',' 15' ,' 16' ],['17 ',' 18' ,' 19' ]],
+                    [['21 ',' 22' ,' 23' ],['24 ',' 25' ,' 26' ],['27 ',' 28' ,' 29' ]]];
+                var noIndex;
+                $(function(){  // init
+                    let inner="";
+                    for(let i=0;i<colleges.length;i++){
+                        inner=inner+'<option value=i>'+colleges[i]+'</option>';
+                    }
+                    $("#college-list").html(inner);//寫入
+                    $("#college-list").change();
+                });
+                $("#college-list").on("change",function(){
+                    let index=this.selectedIndex;//第一層的index
+                    noIndex =index;
+                    console.log('no1',this.selectedIndex);
+                    console.log('第二層的長度',sectors[index].length);//第二層的長度
+                    console.log('第二層選擇的陣列',sectors[index]);//第二層選擇的陣列
+                    let Sinner="";
+                    for(let i=0;i<sectors[index].length;i++){
+                        Sinner=Sinner+'<option value=i>'+sectors[index][i]+'</option>';
+                    }
+                    $("#sector-list").html(Sinner);
+                    Sinner="";
+                    for(let i=0;i<sectorss[index][0].length;i++){
+                         Sinner=Sinner+'<option value=i>'+sectorss[index][0][i]+'</option>';
+                    }
+                    $("#sector3").html(Sinner);
+                });
+                   // 第三層
+                $("#sector-list").on("change",function(){
+                    let index=this.selectedIndex;
+                    console.log('no2',this.selectedIndex);
+                    let Sinner3="";
+                    console.log('0000',sectorss[noIndex]);
+                    for(let i=0;i<sectorss[noIndex][index].length;i++){
+                        Sinner3=Sinner3+'<option value=i>'+sectorss[noIndex][index][i]+'</option>';
+                    }
+                    $("#sector3").html(Sinner3);
+                });
+    </script>
+</body>
+</html>
