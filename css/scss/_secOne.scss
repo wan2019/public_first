@@ -122,6 +122,9 @@ nav > div > ul {
 #sec1 div > h1 {
     color: aliceblue;
     font-size: 60px;
+    @include pad {
+        font-size: 10vw;
+    }
 }
 #sec1a h1 {
     position: absolute;
@@ -152,6 +155,16 @@ nav > div > ul {
     display: block;
     font-size: 15px;
     font-family: 'Baumans', cursive;
+    @include pad {
+        color: aliceblue;
+        position: absolute;
+        top: 80vh;
+        left: 45.5vw;
+        z-index: 1;
+        display: block;
+        font-size: 1.7vw;
+        font-family: 'Baumans', cursive;
+    }
 }
 .round {
     height: 20px;
@@ -169,6 +182,25 @@ nav > div > ul {
         border-radius: 50%;
         border: 2px solid aliceblue;
         cursor: pointer;
+    }
+}
+
+@include pad {
+    #menu {
+        display: none;
+    }
+    #list {
+        display: block;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    #sec1b h4 {
+        position: absolute;
+        top: 55%;
+        right: 43.3vw;
+        white-space: nowrap;
+        color: aliceblue;
     }
 }
 /*背景區*/

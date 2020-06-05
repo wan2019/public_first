@@ -270,6 +270,12 @@ nav > div > ul {
   font-size: 60px;
 }
 
+@media (min-width: 767px) {
+  #sec1 div > h1 {
+    font-size: 10vw;
+  }
+}
+
 #sec1a h1 {
   position: absolute;
   top: 30%;
@@ -309,6 +315,19 @@ nav > div > ul {
   font-family: 'Baumans', cursive;
 }
 
+@media (min-width: 767px) {
+  #sec1 > h3 {
+    color: aliceblue;
+    position: absolute;
+    top: 80vh;
+    left: 45.5vw;
+    z-index: 1;
+    display: block;
+    font-size: 1.7vw;
+    font-family: 'Baumans', cursive;
+  }
+}
+
 .round {
   height: 20px;
   width: 20px;
@@ -331,6 +350,24 @@ nav > div > ul {
   }
 }
 
+@media (min-width: 767px) {
+  #menu {
+    display: none;
+  }
+  #list {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+  }
+  #sec1b h4 {
+    position: absolute;
+    top: 55%;
+    right: 43.3vw;
+    white-space: nowrap;
+    color: aliceblue;
+  }
+}
+
 /*背景區*/
 #back1 {
   position: relative;
@@ -339,13 +376,18 @@ nav > div > ul {
 /*sec2區*/
 #sec2 {
   width: 100%;
-  height: 100%;
-}
-
-#sec2 {
-  width: 100%;
   min-height: 100%;
   background-color: rgba(255, 215, 0, 0.69);
+}
+
+@media (min-width: 767px) {
+  #sec2 {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    background-color: rgba(255, 215, 0, 0.69);
+  }
 }
 
 .img2 {
@@ -355,6 +397,13 @@ nav > div > ul {
 
 .imgOut {
   margin: 50px 0 20px 0;
+}
+
+@media (min-width: 767px) {
+  .imgOut {
+    margin: 50px 0 20px 0;
+    display: none;
+  }
 }
 
 #sec2 li {
@@ -367,6 +416,12 @@ nav > div > ul {
   display: none;
 }
 
+@media (min-width: 767px) {
+  #sec2b {
+    display: block;
+  }
+}
+
 #sec2b > h2 {
   font-family: 'Baumans', cursive;
 }
@@ -377,6 +432,75 @@ margin: 8vw 0 0 10%;}
 */
 .change {
   display: none;
+}
+
+@media (min-width: 767px) {
+  #sec2 > div {
+    margin: auto;
+    height: 100%;
+    max-width: 1100px;
+  }
+  /* .imgOut {
+        margin: 50px 0 20px 0;
+        display: none;
+    } */
+  #sec2a {
+    background-color: #006284;
+    width: 400px;
+    height: 400px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    float: left;
+    -webkit-box-shadow: 1px 1px 5px gray;
+            box-shadow: 1px 1px 5px gray;
+    margin: -58px 0 50px 0;
+    padding: 30px 30px;
+    -webkit-transform: translate(-700px, 0);
+            transform: translate(-700px, 0);
+  }
+  #sec2a img {
+    height: 100%;
+    width: auto;
+    display: block;
+  }
+  .sec2ashow {
+    -webkit-transform: translate(50px, 0) !important;
+            transform: translate(50px, 0) !important;
+  }
+  #sec2b {
+    border: 4px #006284 solid;
+    width: 700px;
+    height: 400px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    float: right;
+    -webkit-box-shadow: 1px 1px 3px gray;
+            box-shadow: 1px 1px 3px gray;
+    margin: 120px 0 0 0;
+    padding: 20px 40px 20px 13%;
+    clear: both;
+    -webkit-transform: translate(700px, 0);
+            transform: translate(700px, 0);
+  }
+  .sec2bshow {
+    -webkit-transform: translate(-50px, 0) !important;
+            transform: translate(-50px, 0) !important;
+  }
+  /*裝飾線*/
+  #sec2b ul > div {
+    border-bottom: 3px solid gray;
+    margin: 10px 0;
+  }
+  .l1 {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1097px) {
+  #sec2a {
+    margin: 320px 0 0 0;
+  }
 }
 
 #sec3 {
@@ -442,4 +566,148 @@ margin: 8vw 0 0 10%;}
   float: left;
   text-align: left;
   clear: both;
+}
+
+@media (min-width: 767px) {
+  #sec3 {
+    padding-top: 120px;
+  }
+  .sec3a {
+    left: 50%;
+  }
+  .sec3b {
+    width: 767px;
+    padding: 0;
+  }
+  .sec3b > li:nth-of-type(odd) {
+    width: 45%;
+    float: left;
+    text-align: end;
+    clear: both;
+  }
+  .sec3b > li:nth-of-type(even) {
+    width: 45%;
+    clear: both;
+    float: right;
+  }
+  .sec3a > div {
+    height: 20px;
+    width: 20px;
+    background: #006284;
+    margin: 22px 0 70px 0;
+    border-radius: 50%;
+    -webkit-transform: translate(-9px, 0);
+            transform: translate(-9px, 0);
+  }
+}
+
+/*sec4區*/
+#sec4 {
+  height: auto;
+  overflow: hidden;
+  background-color: rgba(255, 215, 0, 0.69);
+}
+
+#sec4 > div > div > a > img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 767px) {
+  /*sec4區*/
+  #sec4 {
+    overflow: hidden;
+    padding: 10% 10%;
+  }
+  #sec4 > div > div {
+    height: auto;
+    width: 45%;
+    float: left;
+    font-size: 0;
+  }
+  #sec4 > div > div {
+    padding: 10px;
+  }
+  #sec4 > div > div > a {
+    background-color: aqua;
+    z-index: 2;
+  }
+  #sec4 > div > div > a > img:hover {
+    -webkit-box-shadow: 15px 15px 0px #006284;
+            box-shadow: 15px 15px 0px #006284;
+    -webkit-transform: translate(-6%, -6%);
+            transform: translate(-6%, -6%);
+  }
+}
+
+@media (min-width: 1097px) {
+  #sec4 > div > div {
+    height: auto;
+    width: 33%;
+    float: left;
+    font-size: 0;
+  }
+}
+
+/*sec5區*/
+#sec5 {
+  background-color: gray;
+}
+
+/*sec6區*/
+/*
+#sec6>div{margin: auto;}
+#sec6>div>iframe{margin: auto;width:100vw;height:757;}
+*/
+@media (min-width: 767px) {
+  /*sec5區*/
+  #sec5 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 30px 30px 30px 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  #sec5 > h1 {
+    border: 4px #006284 solid;
+    padding: 20px 0;
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    left: -55%;
+    -webkit-transition: all 1.5s;
+    transition: all 1.5s;
+  }
+  #sec5 > div {
+    border: 4px #006284 solid;
+    width: 70%;
+    height: 110%;
+    position: absolute;
+    right: -70%;
+    bottom: -120%;
+    -webkit-transition: all 1.5s;
+    transition: all 1.5s;
+  }
+  .sec5h1show {
+    -webkit-transform: translate(100%, 100%);
+            transform: translate(100%, 100%);
+  }
+  .sec5divshow {
+    -webkit-transform: translate(-90%, -90%);
+            transform: translate(-90%, -90%);
+  }
+  /*sec6區*/
+  #sec6 {
+    overflow: hidden;
+  }
+  #sec6 > div {
+    margin: auto;
+    margin: 60px 0 60px 0;
+    height: 757;
+  }
+  #sec6 > div > iframe {
+    margin: auto;
+    width: 640;
+    height: 757;
+  }
 }

@@ -1,12 +1,15 @@
 /*sec2區*/
 #sec2 {
     width: 100%;
-    height: 100%;
-}
-#sec2 {
-    width: 100%;
     min-height: 100%;
     background-color: rgba(255, 215, 0, 0.69);
+    @include pad {
+        min-height: 100vh;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        background-color: rgba(255, 215, 0, 0.69);
+    }
 }
 .img2 {
     width: 100%;
@@ -14,6 +17,10 @@
 }
 .imgOut {
     margin: 50px 0 20px 0;
+    @include pad {
+        margin: 50px 0 20px 0;
+        display: none;
+    }
 }
 
 #sec2 li {
@@ -23,6 +30,9 @@
 }
 #sec2b {
     display: none;
+    @include pad {
+        display: block;
+    }
 }
 #sec2b > h2 {
     font-family: 'Baumans', cursive;
@@ -33,4 +43,67 @@ margin: 8vw 0 0 10%;}
 */
 .change {
     display: none;
+}
+
+@include pad {
+    #sec2 > div {
+        margin: auto;
+        height: 100%;
+        max-width: 1100px;
+    }
+    /* .imgOut {
+        margin: 50px 0 20px 0;
+        display: none;
+    } */
+
+    #sec2a {
+        background-color: #006284;
+        width: 400px;
+        height: 400px;
+        transition: all 1s;
+        float: left;
+        box-shadow: 1px 1px 5px gray;
+        margin: -58px 0 50px 0;
+        padding: 30px 30px;
+        transform: translate(-700px, 0);
+    }
+
+    #sec2a img {
+        height: 100%;
+        width: auto;
+        display: block;
+    }
+    .sec2ashow {
+        transform: translate(50px, 0) !important;
+    }
+
+    #sec2b {
+        border: 4px #006284 solid;
+        width: 700px;
+        height: 400px;
+        transition: all 1s;
+        float: right;
+        box-shadow: 1px 1px 3px gray;
+        margin: 120px 0 0 0;
+        padding: 20px 40px 20px 13%;
+        clear: both;
+        transform: translate(700px, 0);
+    }
+    .sec2bshow {
+        transform: translate(-50px, 0) !important;
+    }
+    /*裝飾線*/
+    #sec2b ul > div {
+        border-bottom: 3px solid gray;
+        margin: 10px 0;
+    }
+    .l1 {
+        float: left;
+        width: 50%;
+    }
+}
+@include desktop {
+    #sec2a {
+        margin: 320px 0 0 0;
+    }
 }
