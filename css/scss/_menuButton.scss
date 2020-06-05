@@ -1,0 +1,49 @@
+/*meun 按鈕*/
+#menu {
+    height: 60px;
+    width: 70px;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+#menu2 {
+    border-top: 2px #000 solid;
+    width: 20px;
+    transition: all 1s;
+    position: absolute;
+    top: 32px;
+    right: 20px;
+}
+#menu3 {
+    border-top: 2px #000 solid;
+    width: 20px;
+    position: absolute;
+    top: 32px;
+    right: 20px;
+}
+.menu1 {
+    border-top: 2px #000 solid;
+    width: 20px;
+    transition: all 1s;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+.menu4 {
+    border-top: 2px #000 solid;
+    width: 20px;
+    transition: all 1s;
+    position: absolute;
+    top: 39px;
+    right: 20px;
+}
+.t {
+    transform: rotate(230deg);
+}
+.tt {
+    transform: rotate(-230deg);
+    transition: all 1s;
+}
+.ttt {
+    transform: translate(80px, 0px);
+}

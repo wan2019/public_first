@@ -1,0 +1,55 @@
+#sec3 {
+    position: relative;
+    padding: 30px 0 0;
+}
+#sec3 > h3 {
+    font-size: 40px;
+    padding: 0 0 30px 0;
+    font-family: 'Baumans', cursive;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.sec3a {
+    position: absolute;
+    height: 570px;
+    width: 2px;
+    border-right: 1px solid gray;
+    left: 10%;
+}
+.sec3a > div {
+    height: 20px;
+    width: 20px;
+    background: #006284;
+    margin: 22px 0 70px 0;
+    border-radius: 50%;
+    transform: translate(-9px, 0);
+}
+.sec3b {
+    height: 90vh;
+    width: auto;
+    margin: auto;
+    padding-left: 20%;
+}
+.sec3b > li {
+    margin: 5px 0;
+    font-size: 20px;
+    padding-bottom: 20px;
+    display: none;
+}
+.sec3b > li > p {
+    font-size: 16px;
+    padding: 5px 15px 0 0;
+}
+.sec3b > li:nth-of-type(odd) {
+    width: 100%;
+    float: left;
+    text-align: left;
+    clear: both;
+}
+.sec3b > li:nth-of-type(even) {
+    width: 100%;
+    float: left;
+    text-align: left;
+    clear: both;
+}
