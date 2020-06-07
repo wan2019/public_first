@@ -84,19 +84,19 @@ li {
   right: 20px;
 }
 
-.t {
+.menu__move__one {
   -webkit-transform: rotate(230deg);
           transform: rotate(230deg);
 }
 
-.tt {
+.menu__move__two {
   -webkit-transform: rotate(-230deg);
           transform: rotate(-230deg);
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
-.ttt {
+.menu__move__three {
   -webkit-transform: translate(80px, 0px);
           transform: translate(80px, 0px);
 }
@@ -397,11 +397,15 @@ nav > div > ul {
 
 .imgOut {
   margin: 50px 0 20px 0;
+  padding: 1.5rem;
+  background-color: #006284;
 }
 
 @media (min-width: 767px) {
   .imgOut {
     margin: 50px 0 20px 0;
+    padding: 0;
+    background-color: transparent;
     display: none;
   }
 }

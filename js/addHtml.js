@@ -57,7 +57,8 @@ Page.twoHtml = () => {
             <ul>
                 <li>陳琬珍 性別 ： 女 年紀： 24</li>
                 <li>1995.08.03</li>
-                <li>技能： HTML5 / CSS3, JavaScript / Jquery, Ajax, git</li>
+                <li>技能： </li>
+                <li>HTML5 / CSS3 / SCSS / JavaScript / Jquery / Ajax / React / RWD / SPA / Git / Figma</li>
                 <br />
                 <li>
                     - 能夠獨立在不依賴框架軟體(model2)的情況下，使用html /
@@ -126,9 +127,13 @@ Page.threeHtml = () => {
         </li>
 
         <li>
-            職訓局物聯網課程
+            前端工程師
             <p>
-                2019.6～10(3個月)<br />
+                2019.10～now(在職中)<br />
+                能獨立完成小型專案
+                <br>
+                與後端串接Api，完成前後端分離的前端網頁
+                <br>
                 學習網站設計與網頁製作 動態及互動網站前端技術
             </p>
         </li>
@@ -142,7 +147,7 @@ Page.fourHtml = () => {
     <div>
         <div id="s401">
             <a
-                href="https://github.com/wan2019/public_first/blob/master/index.html"
+                href="https://github.com/wan2019/louise.github.io"
                 target="_blank"
                 ><img src="img/github1.jpg" alt=""
             /></a>
@@ -153,13 +158,13 @@ Page.fourHtml = () => {
             /></a>
         </div>
         <div id="s403">
-            <a href="https://reurl.cc/XX43zj" target="_blank"
-                ><img src="img/evernote-og.png" alt=""
+            <a href="https://hackmd.io/@wan2019/rysZZE52I/%2FjRqH2FDKTxeTYhX_2nLgqA" target="_blank"
+                ><img src="img/HackMD-02.png" alt=""
             /></a>
         </div>
         <div id="s404">
             <a
-                href="https://www.evernote.com/l/ANXDQQtzJztF_IF9JP8W7GEfWSCoiS0NNMY"
+                href="https://www.evernote.com/l/ANXWarunCLNLlqdTpjmd_npwM50Uj8nlDbM"
                 target="_blank"
                 ><img src="img/Chen%20Wan%20Chen%20(1).jpg" alt=""
             /></a>
@@ -170,7 +175,7 @@ Page.fourHtml = () => {
             /></a>
         </div>
         <div id="s406">
-            <a href="" target="_blank"><img src="img/sec4-6.jpg" alt="" /></a>
+            <a href="" target="_blank"><img src="img/codesandbox.png" alt="" /></a>
         </div>
     </div>
 </section>`;

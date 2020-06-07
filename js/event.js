@@ -53,39 +53,46 @@ const secFourClickEvent = () => {
     });
 };
 const menuButton = () => {
-    function closemune() {
-        $('#menu2').removeClass('t');
-        $('#menu3').removeClass('tt');
-        $('.menu1').removeClass('ttt');
-        $('.menu4').removeClass('ttt');
+    const closeMenu = () => {
+        $('#menu2').removeClass('menu__move__one');
+        $('#menu3').removeClass('menu__move__two');
+        $('.menu1').removeClass('menu__move__three');
+        $('.menu4').removeClass('menu__move__three');
         $('#list').removeClass('onepage');
-    }
+    };
+    const openMenu = () => {
+        $('#menu2').addClass('menu__move__one');
+        $('#menu3').addClass('menu__move__two');
+        $('.menu1').addClass('menu__move__three');
+        $('.menu4').addClass('menu__move__three');
+
+        $('#list').addClass('onepage');
+    };
     let menuState = false;
     $('#menu').on('click touchstart', (event) => {
         menuState = !menuState;
         let smallWindos = $(window).width() <= 767;
         if (menuState && smallWindos) {
-            $('#menu2').addClass('t');
-            $('#menu3').addClass('tt');
-            $('.menu1').addClass('ttt');
-            $('.menu4').addClass('ttt');
-
-            $('#sec1 ul').slideDown();
-            $('#list').addClass('onepage');
+            openMenu();
+            $('.menu__box').slideDown();
         } else {
-            closemune();
-            $('#sec1 ul').slideUp();
+            closeMenu();
+            $('.menu__box').slideUp();
         }
         event.preventDefault();
     });
 
-    $('nav a,.round').on('click', function () {
+    $('nav a,.round').on('click', function (e) {
+        console.log('desktop');
+
         if ($(window).width() <= 767) {
             menuState = false;
 
-            closemune();
+            closeMenu();
             $('#sec1 ul').hide();
         } else {
+            console.log('one');
+
             let idname = $(this).attr('href');
             let targetTop = $(idname).position().top;
             $('html,body').animate({ scrollTop: targetTop }, 700);
@@ -93,6 +100,8 @@ const menuButton = () => {
     });
 
     $('.round').on('click', function () {
+        console.log('two');
+
         let idname = $(this).attr('href');
         let targetTop = $(idname).position().top;
         $('html,body').animate({ scrollTop: targetTop }, 700);

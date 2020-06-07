@@ -37,13 +37,13 @@
     top: 39px;
     right: 20px;
 }
-.t {
+.menu__move__one {
     transform: rotate(230deg);
 }
-.tt {
+.menu__move__two {
     transform: rotate(-230deg);
     transition: all 1s;
 }
-.ttt {
+.menu__move__three {
     transform: translate(80px, 0px);
 }
