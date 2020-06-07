@@ -48,7 +48,7 @@ Page.twoHtml = () => {
     <section id="sec2">
     <div>
         <div class="imgOut">
-            <img class="img2" src="img/s3.jpg" alt="" />
+            <img class="img2" src="img/s3-1.jpg" alt="" />
         </div>
 
         <div id="sec2b">
