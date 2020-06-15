@@ -77,13 +77,12 @@ margin: 8vw 0 0 10%;}
         display: block;
     }
     .sec2ashow {
-        transform: translate(50px, 0) !important;
+        transform: translate(50px, 40px) !important;
     }
 
     #sec2b {
         border: 4px #006284 solid;
         width: 700px;
-        height: 400px;
         transition: all 1s;
         float: right;
         box-shadow: 1px 1px 3px gray;

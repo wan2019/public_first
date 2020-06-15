@@ -5,38 +5,38 @@
     background-color: rgba(255, 215, 0, 0.69);
 }
 
-#sec4 > div > div > a > img {
-    width: 100%;
-    height: auto;
+.img__box {
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
+
 @include pad {
     /*sec4區*/
     #sec4 {
         overflow: hidden;
         padding: 10% 10%;
     }
-
-    #sec4 > div > div {
+    .img__box {
+        padding: 10px;
         height: auto;
         width: 45%;
         float: left;
         font-size: 0;
-    }
-    #sec4 > div > div {
-        padding: 10px;
-    }
-
-    #sec4 > div > div > a {
-        background-color: aqua;
-        z-index: 2;
-    }
-    #sec4 > div > div > a > img:hover {
-        box-shadow: 15px 15px 0px #006284;
-        transform: translate(-6%, -6%);
+        a {
+            background-color: aqua;
+            z-index: 2;
+            img:hover {
+                box-shadow: 15px 15px 0px #006284;
+                transform: translate(-6%, -6%);
+                transition: 0.2s;
+            }
+        }
     }
 }
 @include desktop {
-    #sec4 > div > div {
+    .img__box {
         height: auto;
         width: 33%;
         float: left;

@@ -145,36 +145,36 @@ Page.fourHtml = () => {
     const html = `
     <section id="sec4">
     <div>
-        <div id="s401">
+        <div class="img__box" id="s401">
             <a
                 href="https://github.com/wan2019/louise.github.io"
                 target="_blank"
                 ><img src="img/github1.jpg" alt=""
             /></a>
         </div>
-        <div id="s402">
+        <div class="img__box" id="s402">
             <a href="https://iotlouise.firebaseapp.com/" target="_blank"
                 ><img src="img/t2.png" alt=""
             /></a>
         </div>
-        <div id="s403">
+        <div class="img__box" id="s403">
             <a href="https://hackmd.io/@wan2019/rysZZE52I/%2FjRqH2FDKTxeTYhX_2nLgqA" target="_blank"
                 ><img src="img/HackMD-02.png" alt=""
             /></a>
         </div>
-        <div id="s404">
+        <div class="img__box" id="s404">
             <a
                 href="https://www.evernote.com/l/ANXWarunCLNLlqdTpjmd_npwM50Uj8nlDbM"
                 target="_blank"
                 ><img src="img/Chen%20Wan%20Chen%20(1).jpg" alt=""
             /></a>
         </div>
-        <div id="s405">
-            <a href="louise_web_3/index.html" target="_blank"
-                ><img src="img/xc.png" alt=""
-            /></a>
+        <div class="img__box" id="s405">
+        <a href="louise_web_3/index.html" target="_blank"
+            ><img src="img/xc.png" alt=""
+        /></a>
         </div>
-        <div id="s406">
+        <div class="img__box" id="s406">
             <a href="" target="_blank"><img src="img/codesandbox.png" alt="" /></a>
         </div>
     </div>
