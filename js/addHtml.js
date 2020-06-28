@@ -175,7 +175,7 @@ Page.fourHtml = () => {
         /></a>
         </div>
         <div class="img__box" id="s406">
-            <a href="" target="_blank"><img src="img/codesandbox.png" alt="" /></a>
+            <a href="https://codesandbox.io/s/zhuye-6mndg?file=/src/index.js" target="_blank"><img src="img/react.png" alt="" /></a>
         </div>
     </div>
 </section>`;
