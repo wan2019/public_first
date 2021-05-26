@@ -58,11 +58,14 @@ Page.twoHtml = () => {
                 <li>陳琬珍 性別 ： 女 年紀： 24</li>
                 <li>1995.08.03</li>
                 <li>技能： </li>
-                <li>HTML5 / CSS3 / SCSS / JavaScript / Jquery / Ajax / React / RWD / SPA / Git / Figma</li>
+                <li>Vue / Vuex / vuetify / Nuxt.js / REST API / Vue Router </li>
+                <li>HTML5 / CSS3 / SCSS / JavaScript / Jquery / Ajax / RWD / SPA / Git</li>
                 <br />
                 <li>
-                    - 能夠獨立在不依賴框架軟體(model2)的情況下，使用html /
-                    css和JQuery，做出響應式（同時適用手機、電腦、平板瀏覽）的網站
+                    - 擅長使用vue開發，開發過多個後台管理介面（校務停車場管理後台 / 公司內部報表管理後台），擁有大量串接Api經驗
+                </li>
+                <li>
+                    - 從事web開發經驗近兩年，現任前端工程師。
                 </li>
                 <li>- 重視使用者體驗(UX)，根據使用者的習慣，做出最直覺好用的設計</li>
                 <br class="change" />
@@ -106,12 +109,6 @@ Page.threeHtml = () => {
     </div>
     <ul class="sec3b">
         <li>
-            法式甜點師
-            <p>
-                2015～2016(1年半)<br />初入西點領域時，常在下班後看書自學<br />喜歡完成成品的成就感
-            </p>
-        </li>
-        <li>
             澳洲打工度假
             <p>
                 2016～2017(1年)<br />
@@ -127,14 +124,24 @@ Page.threeHtml = () => {
         </li>
 
         <li>
-            前端工程師
+            前端工程師(IoT產業)
             <p>
-                2019.10～now(在職中)<br />
+                2019.10～2020.7<br />
                 能獨立完成小型專案
                 <br>
                 與後端串接Api，完成前後端分離的前端網頁
                 <br>
                 學習網站設計與網頁製作 動態及互動網站前端技術
+            </p>
+        </li>
+        <li>
+            前端工程師
+            <p>
+                2020.7～now(在職中)<br />
+                公司內部系統維護，產品線功能開發（使用 Vue）<br />
+                前端頁面優化修改，改善使用者體驗<br />
+                大量串接Api串接經驗<br />
+                擁有獨立作業、解決問題的能力<br />
             </p>
         </li>
     </ul>
