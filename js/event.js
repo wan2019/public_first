@@ -83,15 +83,14 @@ const menuButton = () => {
     });
 
     $('nav a,.round').on('click', function (e) {
-        console.log('desktop');
 
         if ($(window).width() <= 767) {
+
             menuState = false;
 
             closeMenu();
             $('#sec1 ul').hide();
         } else {
-            console.log('one');
 
             let idname = $(this).attr('href');
             let targetTop = $(idname).position().top;
@@ -100,7 +99,6 @@ const menuButton = () => {
     });
 
     $('.round').on('click', function () {
-        console.log('two');
 
         let idname = $(this).attr('href');
         let targetTop = $(idname).position().top;

@@ -18,6 +18,5 @@ $(document).ready(function () {
             var targetHigh = $('header .logo').innerHeight();
             $('header .container').css('height', targetHigh);
         }
-        console.log('1');
     }
 });

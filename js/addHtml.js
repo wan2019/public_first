@@ -55,7 +55,7 @@ Page.twoHtml = () => {
             <h2>About Me</h2>
 
             <ul>
-                <li>陳琬珍 性別 ： 女 年紀： 24</li>
+                <li>陳琬珍</li>
                 <li>1995.08.03</li>
                 <li>技能： </li>
                 <li>Vue / Vuex / vuetify / Nuxt.js / REST API / Vue Router </li>
@@ -65,9 +65,9 @@ Page.twoHtml = () => {
                     - 擅長使用vue開發，開發過多個後台管理介面（校務停車場管理後台 / 公司內部報表管理後台），擁有大量串接Api經驗
                 </li>
                 <li>
-                    - 從事web開發經驗近兩年，現任前端工程師。
+                    - 從事web開發經驗近四年，現任前端工程師。
                 </li>
-                <li>- 重視使用者體驗(UX)，根據使用者的習慣，做出最直覺好用的設計</li>
+                <li>- 重視使用者體驗(UX)，根據使用者的習慣，設計直覺好用的設計</li>
                 <br class="change" />
                 <div></div>
                 <li>專長、興趣</li>
